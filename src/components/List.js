@@ -8,10 +8,16 @@ export const List = props => {
       {props.list.map((e, i) => (
         <li key={i}>
           {e}
-          <Button size={"small"} className='list-button' onClick={() => props.handleDeleteItem(e, i)}>x</Button>
+          <Button
+            type="primary"
+            ghost
+            icon="delete"
+            size={"small"}
+            className="list-button"
+            onClick={() => props.handleDeleteItem(e, i)}
+          />
         </li>
       ))}
     </ul>
   );
 };
-

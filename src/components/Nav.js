@@ -12,7 +12,7 @@ export const Nav = props => {
           <Input type="text" value={props.value} onChange={props.handleInput} />
         </FormItem>
           <FormItem>
-              <Button htmlType="submit">Add item</Button>
+              <Button type='primary' ghost htmlType="submit">Add item</Button>
           </FormItem>
       </Form>
     </div>
