@@ -6,7 +6,7 @@ import { Nav } from "./components/Nav";
 class App extends Component {
   state = {
     input: "",
-    list: [1,2,3,4,5,6,7]
+    list: ['Besides providing built-in code inspections', 'Besides providing built-in code inspections', '12', 'Besides providing built-in code inspections', '55555']
   };
   handleInput = e => {
     this.setState({

@@ -8,9 +8,10 @@ export const List = props => {
       {props.list.map((e, i) => (
         <li key={i}>
           {e}
-          <Button onClick={() => props.handleDeleteItem(e, i)}>x</Button>
+          <Button size={"small"} className='list-button' onClick={() => props.handleDeleteItem(e, i)}>x</Button>
         </li>
       ))}
     </ul>
   );
 };
+
